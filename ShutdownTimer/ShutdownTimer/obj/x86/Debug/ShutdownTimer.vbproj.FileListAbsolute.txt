@@ -1,0 +1,15 @@
+C:\Users\babkamen\Documents\Visual Studio 2010\Projects\ShutdownTimer\ShutdownTimer\bin\Debug\ShutdownTimer.exe.manifest
+C:\Users\babkamen\Documents\Visual Studio 2010\Projects\ShutdownTimer\ShutdownTimer\bin\Debug\ShutdownTimer.application
+C:\Users\babkamen\Documents\Visual Studio 2010\Projects\ShutdownTimer\ShutdownTimer\bin\Debug\ShutdownTimer.exe
+C:\Users\babkamen\Documents\Visual Studio 2010\Projects\ShutdownTimer\ShutdownTimer\bin\Debug\ShutdownTimer.pdb
+C:\Users\babkamen\Documents\Visual Studio 2010\Projects\ShutdownTimer\ShutdownTimer\bin\Debug\ShutdownTimer.xml
+C:\Users\babkamen\Documents\Visual Studio 2010\Projects\ShutdownTimer\ShutdownTimer\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\babkamen\Documents\Visual Studio 2010\Projects\ShutdownTimer\ShutdownTimer\obj\x86\Debug\ShutdownTimer.Main.resources
+C:\Users\babkamen\Documents\Visual Studio 2010\Projects\ShutdownTimer\ShutdownTimer\obj\x86\Debug\ShutdownTimer.Resources.resources
+C:\Users\babkamen\Documents\Visual Studio 2010\Projects\ShutdownTimer\ShutdownTimer\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\babkamen\Documents\Visual Studio 2010\Projects\ShutdownTimer\ShutdownTimer\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\babkamen\Documents\Visual Studio 2010\Projects\ShutdownTimer\ShutdownTimer\obj\x86\Debug\ShutdownTimer.exe.manifest
+C:\Users\babkamen\Documents\Visual Studio 2010\Projects\ShutdownTimer\ShutdownTimer\obj\x86\Debug\ShutdownTimer.application
+C:\Users\babkamen\Documents\Visual Studio 2010\Projects\ShutdownTimer\ShutdownTimer\obj\x86\Debug\ShutdownTimer.exe
+C:\Users\babkamen\Documents\Visual Studio 2010\Projects\ShutdownTimer\ShutdownTimer\obj\x86\Debug\ShutdownTimer.xml
+C:\Users\babkamen\Documents\Visual Studio 2010\Projects\ShutdownTimer\ShutdownTimer\obj\x86\Debug\ShutdownTimer.pdb

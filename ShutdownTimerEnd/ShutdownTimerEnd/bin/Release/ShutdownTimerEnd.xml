@@ -1,0 +1,204 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+ShutdownTimerEnd
+</name>
+</assembly>
+<members>
+<member name="F:ShutdownTimerEnd.FormAnimator.AnimationMethod.Roll">
+	<summary>
+ Rolls out from edge when showing and into edge when hiding.
+ </summary>
+	<remarks>
+ This is the default animation method and requires a direction.
+ </remarks>
+</member><member name="F:ShutdownTimerEnd.FormAnimator.AnimationMethod.Centre">
+	<summary>
+ Expands out from centre when showing and collapses into centre when hiding.
+ </summary>
+</member><member name="F:ShutdownTimerEnd.FormAnimator.AnimationMethod.Slide">
+	<summary>
+ Slides out from edge when showing and slides into edge when hiding.
+ </summary>
+	<remarks>
+ Requires a direction.
+ </remarks>
+</member><member name="F:ShutdownTimerEnd.FormAnimator.AnimationMethod.Blend">
+	<summary>
+ Fades from transaprent to opaque when showing and from opaque to transparent when hiding.
+ </summary>
+</member><member name="T:ShutdownTimerEnd.FormAnimator.AnimationMethod">
+	<summary>
+ The methods of animation available.
+ </summary>
+</member><member name="F:ShutdownTimerEnd.FormAnimator.AnimationDirection.Right">
+	<summary>
+ From left to right.
+ </summary>
+</member><member name="F:ShutdownTimerEnd.FormAnimator.AnimationDirection.Left">
+	<summary>
+ From right to left.
+ </summary>
+</member><member name="F:ShutdownTimerEnd.FormAnimator.AnimationDirection.Down">
+	<summary>
+ From top to bottom.
+ </summary>
+</member><member name="F:ShutdownTimerEnd.FormAnimator.AnimationDirection.Up">
+	<summary>
+ From bottom to top.
+ </summary>
+</member><member name="T:ShutdownTimerEnd.FormAnimator.AnimationDirection">
+	<summary>
+ The directions in which the Roll and Slide animations can be shown.
+ </summary>
+	<remarks>
+ Horizontal and vertical directions can be combined to create diagonal animations.
+ </remarks>
+</member><member name="F:ShutdownTimerEnd.FormAnimator.AW_HIDE">
+	<summary>
+ Hide the form.
+ </summary>
+</member><member name="F:ShutdownTimerEnd.FormAnimator.AW_ACTIVATE">
+	<summary>
+ Activate the form.
+ </summary>
+</member><member name="F:ShutdownTimerEnd.FormAnimator.DEFAULT_DURATION">
+	<summary>
+ The number of milliseconds over which the animation occurs if no value is specified.
+ </summary>
+</member><member name="F:ShutdownTimerEnd.FormAnimator._form">
+	<summary>
+ The form to be animated.
+ </summary>
+</member><member name="F:ShutdownTimerEnd.FormAnimator._method">
+	<summary>
+ The animation method used to show and hide the form.
+ </summary>
+</member><member name="F:ShutdownTimerEnd.FormAnimator._direction">
+	<summary>
+ The direction in which to Roll or Slide the form.
+ </summary>
+</member><member name="F:ShutdownTimerEnd.FormAnimator._duration">
+	<summary>
+ The number of milliseconds over which the animation is played.
+ </summary>
+</member><member name="P:ShutdownTimerEnd.FormAnimator.Method">
+	<summary>
+ Gets or sets the animation method used to show and hide the form.
+ </summary>
+	<value>
+ The animation method used to show and hide the form.
+ </value>
+	<remarks>
+		<b>Roll</b> is used by default if no method is specified.
+ </remarks>
+</member><member name="P:ShutdownTimerEnd.FormAnimator.Direction">
+	<summary>
+ Gets or sets the direction in which the animation is performed.
+ </summary>
+	<value>
+ The direction in which the animation is performed.
+ </value>
+	<remarks>
+ The direction is only applicable to the <b>Roll</b> and <b>Slide</b> methods.
+ </remarks>
+</member><member name="P:ShutdownTimerEnd.FormAnimator.Duration">
+	<summary>
+ Gets or sets the number of milliseconds over which the animation is played.
+ </summary>
+	<value>
+ The number of milliseconds over which the animation is played.
+ </value>
+</member><member name="P:ShutdownTimerEnd.FormAnimator.Form">
+	<summary>
+ Gets the form to be animated.
+ </summary>
+	<value>
+ The form to be animated.
+ </value>
+</member><member name="M:ShutdownTimerEnd.FormAnimator.AnimateWindow(System.IntPtr,System.Int32,System.Int32)">
+	<summary>
+ Windows API function to animate a window.
+ </summary>
+</member><member name="M:ShutdownTimerEnd.FormAnimator.#ctor(System.Windows.Forms.Form)">
+	<summary>
+ Creates a new <b></b>FormAnimator object for the specified form.
+ </summary>
+	<param name="form">
+ The form to be animated.
+ </param>
+	<remarks>
+ No animation will be used unless the <b>Method</b> and/or <b>Direction</b> properties are set independently. The <b>Duration</b> is set to quarter of a second by default.
+ </remarks>
+</member><member name="M:ShutdownTimerEnd.FormAnimator.#ctor(System.Windows.Forms.Form,ShutdownTimerEnd.FormAnimator.AnimationMethod,System.Int32)">
+	<summary>
+ Creates a new <b>FormAnimator</b> object for the specified form using the specified method over the specified duration.
+ </summary>
+	<param name="form">
+ The form to be animated.
+ </param>
+	<param name="method">
+ The animation method used to show and hide the form.
+ </param>
+	<param name="duration">
+ The number of milliseconds over which the animation is played.
+ </param>
+	<remarks>
+ No animation will be used for the <b>Roll</b> or <b>Slide</b> methods unless the <b>Direction</b> property is set independently.
+ </remarks>
+</member><member name="M:ShutdownTimerEnd.FormAnimator.#ctor(System.Windows.Forms.Form,ShutdownTimerEnd.FormAnimator.AnimationMethod,ShutdownTimerEnd.FormAnimator.AnimationDirection,System.Int32)">
+	<summary>
+ Creates a new <b>FormAnimator</b> object for the specified form using the specified method in the specified direction over the specified duration.
+ </summary>
+	<param name="form">
+ The form to be animated.
+ </param>
+	<param name="method">
+ The animation method used to show and hide the form.
+ </param>
+	<param name="direction">
+ The direction in which to animate the form.
+ </param>
+	<param name="duration">
+ The number of milliseconds over which the animation is played.
+ </param>
+	<remarks>
+ The <i>direction</i> argument will have no effect if the <b>Centre</b> or <b>Blend</b> method is
+ specified.
+ </remarks>
+</member><member name="M:ShutdownTimerEnd.FormAnimator.Form_Load(System.Object,System.EventArgs)">
+	<summary>
+ Animates the form automatically when it is loaded.
+ </summary>
+</member><member name="M:ShutdownTimerEnd.FormAnimator.Form_VisibleChanged(System.Object,System.EventArgs)">
+	<summary>
+ Animates the form automatically when it is shown or hidden.
+ </summary>
+</member><member name="M:ShutdownTimerEnd.FormAnimator.Form_Closing(System.Object,System.ComponentModel.CancelEventArgs)">
+	<summary>
+ Animates the form automatically when it closes.
+ </summary>
+</member><member name="T:ShutdownTimerEnd.FormAnimator">
+	<summary>
+ Animates a form when it is shown, hidden or closed.
+ </summary>
+	<remarks>
+ MDI child forms do not support the Blend method and only support other methods while being displayed for the first time and when closing.
+ </remarks>
+</member><member name="P:ShutdownTimerEnd.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:ShutdownTimerEnd.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:ShutdownTimerEnd.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>
